@@ -1,6 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
 # C extensions
@@ -48,6 +48,53 @@ coverage.xml
 *.cover
 *.py.cover
 .hypothesis/
+
+# Data files
+data/
+data_processed/
+*.json
+*.csv
+!split.csv
+*.parquet
+
+# Model files
+models/
+*.joblib
+*.model
+*.h5
+*.pt
+*.pth
+
+# Embeddings cache
+*embeddings*.parquet
+*embeddings*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+venv/
+env/
+
+# Output
+predictions*.csv
+results/
+output/
 .pytest_cache/
 cover/
 
